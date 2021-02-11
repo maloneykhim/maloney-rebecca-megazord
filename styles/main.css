@@ -1,1 +1,3 @@
-style
+@import url("accueil.css") accueil;
+@import url("discographie.css") discographie;
+
