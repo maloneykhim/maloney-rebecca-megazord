@@ -1,1 +1,7 @@
-discographie
+body {
+  background-color: #000;
+}
+
+.heros {
+  width: 300px;
+}
