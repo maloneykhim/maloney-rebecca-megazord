@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 
-picture {
+picture.accueilHeros {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17,7 +17,7 @@ picture {
   z-index: -100;
 }
 
-h1 {
+h1.accueilHeros {
   font-family: "Cinzel", serif;
   font-weight: 700;
   color: #99202f;
@@ -33,14 +33,14 @@ h1 {
   transform: translate(-50%, -40%);
 }
 
-.box {
+.contraste {
   height: 100vh;
   width: 100vw;
   background-color: #fff;
   opacity: 50%;
 }
 
-p {
+p.accueilHeros {
   font-family: "Hind Madurai", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
@@ -65,8 +65,9 @@ a.btn {
   font-weight: 500;
 }
 
-.hero a.btn {
-  padding: 10vh 30vw;
+a.btn:hover {
+  background-color: #c63f50;
+  color: #fff;
 }
 
 @media (orientation: landscape) {
@@ -80,17 +81,17 @@ a.btn {
     object-fit: contain;
     object-position: 100% 50%;
   }
-  picture {
+  picture.accueilHeros {
     position: absolute;
     top: 50%;
     left: 50%;
     height: 100vh;
     width: 100vw;
   }
-  h1 {
+  h1.accueilHeros {
     font-size: 2.7rem;
   }
-  p {
+  p.accueilHeros {
     font-size: 1rem;
     padding: 0.5rem;
   }
