@@ -1,2 +1,13 @@
 @import url("accueil.css");
 @import url("discographie.css");
+
+:root {
+  --bg: #fff;
+  --text: black;
+  --primary: #99202f;
+  --primary-alt: #c63f50;
+  --secondary: #3e3b3b;
+  --secondary-alt: #d6d6d6;
+  --title: "Cinzel";
+  --regular: "Hind Madurai";
+}
