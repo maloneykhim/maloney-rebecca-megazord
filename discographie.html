@@ -18,11 +18,25 @@
     <link rel="stylesheet" href="styles\main.css" />
   </head>
   <body>
-    <picture class="heros">
-      <!-- <source media="(min-width:1000px)" srcset="img/masterpiece.jpg" /> -->
-      <img src="img/fixme.jpg" alt="fixme" class="picture" />
-    </picture>
-    <div></div>
+    <header class="heros">
+      <picture>
+        <source media="(min-width:1000px)" srcset="img/masterpiece.jpg" />
+        <img src="img/fixme.jpg" alt="fixme" class="image" sizes="100vw" />
+      </picture>
+      <div class="degrade"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-sm-8 align-self-end justify-content-start">
+            <h1>Discographie</h1>
+            <p>
+              Le groupe Mariana's Trench a, jusqu'à présent, 5 albums studio
+              répartis entre 2002 et 2019.
+            </p>
+            <button type="button" class="btn btn-dark">En savoir plus</button>
+          </div>
+        </div>
+      </div>
+    </header>
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="discographie.js"></script>
   </body>
