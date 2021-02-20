@@ -101,6 +101,34 @@ body {
 
 .accueil footer {
   background-color: #99202f;
+  position: absolute;
+  top: 250%;
+  width: 100%;
   padding: 20px;
   margin-top: 20px;
+}
+
+.accueil h4 {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 1rem;
+}
+
+.accueil .block {
+  height: 800px;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.animation {
+  background-color: transparent;
+  width: 100%;
+}
+
+.accueil main .container-fluid {
+  position: absolute;
+  top: 150%;
 }
