@@ -25,7 +25,7 @@
   <body class="accueil">
     <header>
       <picture>
-        <source srcset="img/paysagev2.jpg" media="(orientation: landscape)" />
+        <source srcset="img/paysagev1.jpg" media="(orientation: landscape)" />
         <img class="image" src="img/portrait.jpg" />
       </picture>
       <div class="contraste"></div>
@@ -44,6 +44,46 @@
         </div>
       </div>
     </header>
+
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"
+          ><img src="img/logo-xs.png" alt="logo"
+        /></a>
+        <!-- Hamburger button -->
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Affichage/masquage de la navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation -->
+        <div id="mainNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="discographie.html" class="nav-link">Discographie</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-4"></div>
+        </div>
+      </div>
+    </footer>
+
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="accueil.js"></script>
   </body>

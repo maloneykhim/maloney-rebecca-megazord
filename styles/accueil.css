@@ -39,7 +39,7 @@ body {
   opacity: 50%;
 }
 
-.accueil p {
+.accueil header p {
   font-family: "Hind Madurai", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
@@ -93,4 +93,14 @@ body {
     font-size: 1rem;
     padding: 0.5rem;
   }
+}
+
+.accueil .navbar {
+  background-color: black;
+}
+
+.accueil footer {
+  background-color: #99202f;
+  padding: 20px;
+  margin-top: 20px;
 }
