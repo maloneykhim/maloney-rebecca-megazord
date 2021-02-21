@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -93,22 +97,53 @@ body {
     font-size: 1rem;
     padding: 0.5rem;
   }
+  .accueil .contenu {
+    position: relative;
+    top: 18%;
+  }
+  .accueil footer {
+    position: absolute;
+    margin-top: 1500%;
+  }
 }
 
 .navbar {
   background-color: black;
 }
 
-.footer {
+.accueil footer {
   background-color: #99202f;
   position: absolute;
-  top: 250%;
+  top: 340%;
   width: 100%;
   padding: 20px;
   margin-top: 20px;
 }
 
-.h4 {
+.accueil h2 {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  color: #3e3b3b;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.accueil h3 {
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  color: #99202f;
+  text-align: center;
+}
+
+.accueil h4 {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.accueil h5 {
   font-family: "Hind Madurai", sans-serif;
   font-weight: 400;
   color: white;
@@ -119,16 +154,34 @@ body {
   height: 800px;
 }
 
-.teal {
-  background-color: teal;
-}
-
-.animation {
+.accueil .animation {
   background-color: transparent;
   width: 100%;
 }
 
 .accueil main .container-fluid {
   position: absolute;
-  top: 150%;
+  top: 195%;
+}
+
+.accueil .card {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.accueil .btnMembres {
+  border-radius: 4px;
+  text-align: center;
+  background-color: #99202f;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 500;
+}
+
+.accueil .btnMembres:hover {
+  background-color: #c63f50;
+  color: #fff;
 }
