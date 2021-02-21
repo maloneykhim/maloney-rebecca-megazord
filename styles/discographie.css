@@ -6,7 +6,7 @@
 
 @media screen and (orientation: landscape) {
   .discographie .heros {
-    height: 56.25vh;
+    height: 56.25vw;
   }
 }
 
@@ -47,7 +47,38 @@
   font-family: "Cinzel", serif;
 }
 
+.discographie h2 {
+  color: #99202f;
+  font-family: "Cinzel", serif, bold;
+}
+
+.discographie .li {
+  color: rgb(67, 64, 64);
+  font-family: "Cinzel", serif;
+}
+
 .discographie p {
   color: rgb(181, 181, 181);
   font-family: "Hind Madurai", sans-serif;
+}
+
+.discographie .album {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.discographie .image.split {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+  .discographie .album {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .discographie .image.split {
+    margin-top: 0px;
+  }
 }

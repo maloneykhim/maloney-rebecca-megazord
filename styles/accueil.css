@@ -95,11 +95,11 @@ body {
   }
 }
 
-.accueil .navbar {
+.navbar {
   background-color: black;
 }
 
-.accueil footer {
+.footer {
   background-color: #99202f;
   position: absolute;
   top: 250%;
@@ -108,7 +108,7 @@ body {
   margin-top: 20px;
 }
 
-.accueil h4 {
+.h4 {
   font-family: "Hind Madurai", sans-serif;
   font-weight: 400;
   color: white;
