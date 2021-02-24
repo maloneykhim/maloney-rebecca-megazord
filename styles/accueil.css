@@ -185,3 +185,15 @@ body {
   background-color: #c63f50;
   color: #fff;
 }
+
+.accueil h6 {
+  color: #fff;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3e3b3b;
+}

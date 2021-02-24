@@ -87,8 +87,20 @@
 .discographie footer {
   background-color: #99202f;
   position: absolute;
-  top: 800%;
+  top: 750%;
   width: 100%;
   padding: 20px;
   margin-top: 20px;
+}
+
+.discographie h6 {
+  color: #fff;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3e3b3b;
 }
