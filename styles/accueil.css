@@ -190,10 +190,38 @@ body {
   color: #fff;
 }
 
-a:link {
-  text-decoration: none;
+.accueil h6 a:link {
+  color: #fff;
 }
 
-a:hover {
+.accueil footer h6 a:hover {
   color: #3e3b3b;
+}
+
+.accueil .modal-body img {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accueil h3 {
+  color: rgb(67, 64, 64);
+  font-family: "Cinzel", serif, bold;
+}
+
+.accueil .video {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
