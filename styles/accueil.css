@@ -190,11 +190,11 @@ body {
   color: #fff;
 }
 
-.accueil h6 a:link {
+.accueil h6:link {
   color: #fff;
 }
 
-.accueil footer h6 a:hover {
+.accueil footer h6:hover {
   color: #3e3b3b;
 }
 
