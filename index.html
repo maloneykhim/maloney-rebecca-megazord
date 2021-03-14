@@ -15,6 +15,8 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Hind+Madurai:wght@300;400;500&display=swap"
@@ -164,7 +166,6 @@
       </div>
     </main>
 
-    <h3>Vidéo - "My Love Is The Killing Kind - Documentary"</h3>
     <section class="video">
       <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/61-wdN87yAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
@@ -185,37 +186,39 @@
       </div>
     </footer>
 
-    <div class="modal" id="popupMaloney" tabindex="-1">
-      <div class="modal-dialog .modal-dialog-centered ">
+    <!-- Modal -->
+    <div class="modal" id="popupMaloney" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Maloney Khim</h5>
+            <h3 class="modal-title" id="exampleModalLongTitle">Maloney Khim</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <img src="img/maloney.gif" alt="">
-          </div>        
+          </div>
         </div>
       </div>
     </div>
+
     
-    <div class="modal" id="popupRebecca" tabindex="-1">
-      <div class="modal-dialog .modal-dialog-centered ">
+    <div class="modal" id="popupRebecca" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Rebecca Pilotte</h5>
+            <h3 class="modal-title" id="exampleModalLongTitle">Rebecca Pilotte</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <img src="img/rebecca.png" alt="">
-          </div>        
+          </div>
         </div>
       </div>
-    </div>   
+    </div>
 
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="accueil.js"></script>
