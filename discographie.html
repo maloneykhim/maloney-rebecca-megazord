@@ -10,6 +10,10 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
@@ -19,17 +23,30 @@
   </head>
   <body class="discographie">
     <header class="heros">
-      <picture>
+      <!-- <picture>
         <source media="(min-width:1000px)" srcset="img/masterpiece.jpg" />
         <img src="img/fixme.jpg" alt="fixme" class="image" sizes="100vw" />
-      </picture>
+      </picture> -->
+
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/fixme.jpg" /></div>
+          <div class="swiper-slide"><img src="img/masterpiece.jpg" /></div>
+          <div class="swiper-slide"><img src="img/everafter.jpg" /></div>
+          <div class="swiper-slide"><img src="img/astoria.png" /></div>
+          <div class="swiper-slide"><img src="img/phantoms.jpg" /></div>
+        </div>
+      </div>
       <div class="degrade"></div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-sm-8 align-self-end justify-content-start">
+          <div class="col-12 col-sm-8 align-self-center justify-content-start">
             <h1>Discographie</h1>
             <p>
-              Le groupe Mariana's Trench a, jusqu'à présent, 5 albums studio
+              Le groupe Mariana's Trench, jusqu'à présent, a 5 albums studio
               répartis entre 2002 et 2019.
             </p>
             <button type="button" class="btn btn-dark">En savoir plus</button>
@@ -238,30 +255,56 @@
         allowfullscreen
       ></iframe>
     </section>
-
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-lg-4 text-center text-lg-start">
-            <h6>Maloney Khim</h6>
-            <h6>Rebecca Pilotte</h6>
+            <h6><a data-toggle="modal" href="#popupMaloney">Maloney Khim</a></h6>
+            <h6><a data-toggle="modal" href="#popupRebecca">Rebecca Pilotte</a></h6>
           </div>
           <div class="col-xs-12 col-lg-8 text-center text-lg-end">
-            <a
-              href="https://github.com/maloneykhim/maloney-rebecca-megazord"
-              target="_blank"
-            >
-              <h6>
-                https://github.com/maloneykhim/maloney-rebecca-megazord
-              </h6></a
-            >
+            <a href="https://github.com/maloneykhim/maloney-rebecca-megazord" target="_blank">
+            https://github.com/maloneykhim/maloney-rebecca-megazord</a>
             <h6>©2021</h6>
           </div>
         </div>
       </div>
     </footer>
 
-    <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="discographie.js"></script>
+    <!-- Modal -->
+    <div class="modal" id="popupMaloney" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLongTitle">Maloney Khim</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="img/maloney.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="modal" id="popupRebecca" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="exampleModalLongTitle">Rebecca Pilotte</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="img/rebecca.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/discographie.js"></script>
   </body>
 </html>
