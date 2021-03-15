@@ -111,14 +111,7 @@ body {
   background-color: black;
 }
 
-.accueil footer {
-  background-color: #99202f;
-  position: absolute;
-  top: 470%;
-  width: 100%;
-  padding: 20px;
-  margin-top: 20px;
-}
+/*/ Cards/*/
 
 .accueil h2 {
   font-family: "Cinzel", serif;
@@ -126,6 +119,7 @@ body {
   color: #3e3b3b;
   font-size: 3rem;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .accueil h3 {
@@ -161,7 +155,7 @@ body {
 
 .accueil main .container-fluid {
   position: absolute;
-  top: 195%;
+  top: 2200px;
 }
 
 .accueil .card {
@@ -186,6 +180,22 @@ body {
   color: #fff;
 }
 
+.accueil h3 {
+  color: rgb(67, 64, 64);
+  font-family: "Cinzel", serif, bold;
+}
+
+/*/ Footer/*/
+
+.accueil footer {
+  background-color: #99202f;
+  position: absolute;
+  top: 4225px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
 .accueil h6 {
   color: #fff;
 }
@@ -194,9 +204,11 @@ body {
   color: #fff;
 }
 
-.accueil footer h6:hover {
+.accueil footer a:hover {
   color: #3e3b3b;
 }
+
+/*/ Modal/*/
 
 .accueil .modal-body img {
   width: 300px;
@@ -205,14 +217,11 @@ body {
   margin-right: auto;
 }
 
-.accueil h3 {
-  color: rgb(67, 64, 64);
-  font-family: "Cinzel", serif, bold;
-}
+/*/ Vidéo/*/
 
 .accueil .video {
   position: absolute;
-  top: 340%;
+  top: 470%;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
@@ -224,4 +233,38 @@ iframe {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/*/ Diaporama/*/
+
+.accueil .diaporama {
+  position: absolute;
+  top: 800px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.accueil .diaporama h2 {
+  text-align: center;
+}
+
+.accueil .swiper-container {
+  width: 960px;
+  height: 540px;
+}
+
+.accueil .diaporama img {
+  object-fit: cover;
+}
+
+.accueil .swiper-pagination-bullet {
+  background-color: #cab2b2;
+  position: relative;
+  left: 45%;
+  bottom: 30%;
+  margin-right: 10px !important;
+}
+
+.accueil .swiper-pagination-bullet-active {
+  background-color: #c63f50;
 }

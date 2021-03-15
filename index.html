@@ -17,6 +17,10 @@
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Hind+Madurai:wght@300;400;500&display=swap"
@@ -80,7 +84,28 @@
 
 
     <main id="main">
-      <div class="container-fluid">
+
+      <!-- Swiper Slides Promo -->
+
+      <section class="diaporama">
+
+        <h2>images promotionnelles</h2>
+            
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/accueilDiapo1S.jpg"></div>
+            <div class="swiper-slide"><img src="img/accueilDiapo2S.jpg"> </div>
+            <div class="swiper-slide"><img src="img/accueilDiapo3S.jpg">  </div>
+            <div class="swiper-slide"><img src="img/accueilDiapo4S.jpg">  </div>
+          </div></div>
+          <div class="swiper-pagination-bullets"></div>
+        </div>
+
+      </section>
+
+      <!-- Cartes Membres -->
+
+      <div class="container-fluid membres">
         <div class="row justify-content-center">
           <div class="col-12 col-md-3">
             <div class="d-none d-md-block">
@@ -91,7 +116,7 @@
           </div>
           <div class="col-md-9">
             <div class="contenu">
-              <h2>Membres du groupe</h2>
+              <h2>membres du groupe</h2>
               <div class="container"> 
               <div class="row">
               <div class="col-12 col-sm-6">
@@ -166,9 +191,14 @@
       </div>
     </main>
 
+
+    <!-- Video -->
+
     <section class="video">
       <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/61-wdN87yAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
+
+    <!-- Footer -->
 
     <footer>
       <div class="container">
@@ -220,7 +250,12 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="accueil.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/accueil.js"></script>
+
+    
+
   </body>
 </html>
