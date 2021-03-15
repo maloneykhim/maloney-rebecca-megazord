@@ -92,7 +92,7 @@
 .discographie footer {
   background-color: #99202f;
   position: absolute;
-  top: 750%;
+  top: 870%;
   width: 100%;
   padding: 20px;
   margin-top: 20px;
@@ -112,12 +112,22 @@ a:hover {
 
 .discographie .video {
   position: relative;
+}
+
+.discographie h3 {
+  color: rgb(67, 64, 64);
+  font-family: "Cinzel", serif, bold;
+}
+
+.discographie .video {
+  position: absolute;
+  top: 750%;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
 }
 
-iframe {
+.discographie iframe {
   position: absolute;
   top: 0;
   left: 0;
