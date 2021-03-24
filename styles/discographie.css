@@ -32,7 +32,10 @@
   height: 100%;
   width: 100%;
   z-index: 3;
-  background-image: linear-gradient(transparent, rgba(153, 32, 47, 0.75));
+  background-image: linear-gradient(
+    rgba(31, 7, 10, 0.75),
+    rgba(153, 32, 47, 0.75)
+  );
 }
 
 .discographie .container-fluid,
@@ -43,7 +46,7 @@
 
 .discographie .heros .container-fluid {
   position: absolute;
-  top: 350px;
+  top: 250px;
   left: 100px;
   z-index: 3;
 }
@@ -98,8 +101,7 @@
 
 .discographie footer {
   background-color: #99202f;
-  position: absolute;
-  top: 880%;
+  position: relative;
   width: 100%;
   padding: 20px;
   margin-top: 20px;
@@ -124,22 +126,14 @@ a:hover {
 .discographie h3 {
   color: rgb(67, 64, 64);
   font-family: "Cinzel", serif, bold;
+  padding-top: 25px;
 }
 
 .discographie .video {
-  position: absolute;
-  top: 760%;
+  position: relative;
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
-}
-
-.discographie iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .swiper-container {

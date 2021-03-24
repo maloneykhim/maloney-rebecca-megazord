@@ -19,7 +19,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -85,24 +84,6 @@
 
     <main id="main">
 
-      <!-- Swiper Slides Promo -->
-
-      <section class="diaporama">
-
-        <h2>images promotionnelles</h2>
-            
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/accueilDiapo1S.jpg"></div>
-            <div class="swiper-slide"><img src="img/accueilDiapo2S.jpg"> </div>
-            <div class="swiper-slide"><img src="img/accueilDiapo3S.jpg">  </div>
-            <div class="swiper-slide"><img src="img/accueilDiapo4S.jpg">  </div>
-          </div></div>
-          <div class="swiper-pagination-bullets"></div>
-        </div>
-
-      </section>
-
       <!-- Cartes Membres -->
 
       <div class="container-fluid membres">
@@ -115,7 +96,28 @@
             </div>
           </div>
           <div class="col-md-9">
+      
             <div class="contenu">
+
+                <!-- Swiper Slides Promo -->
+
+              <section class="diaporama">
+
+                <h2>images promotionnelles</h2>
+                    
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/accueilDiapo1S.jpg"></div>
+                    <div class="swiper-slide"><img src="img/accueilDiapo2S.jpg"> </div>
+                    <div class="swiper-slide"><img src="img/accueilDiapo3S.jpg">  </div>
+                    <div class="swiper-slide"><img src="img/accueilDiapo4S.jpg">  </div>
+                  </div></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                
+
+              </section> 
+      
               <h2>membres du groupe</h2>
               <div class="container"> 
               <div class="row">
@@ -186,19 +188,18 @@
               </div>
               </div> 
                 
-              </div> 
+              </div>
+
+              <!-- Video -->
+              <h2>vidéo</h2>
+
+              <section class="video">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/61-wdN87yAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </section> 
         </div>
       </div>
-    </main>
 
-
-    <!-- Video -->
-
-    <section class="video">
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/61-wdN87yAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-
-    <!-- Footer -->
+      <!-- Footer -->
 
     <footer>
       <div class="container">
@@ -215,6 +216,11 @@
         </div>
       </div>
     </footer>
+
+    </main>
+
+
+    
 
     <!-- Modal -->
     <div class="modal" id="popupMaloney" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -251,7 +257,7 @@
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript" src="scripts/accueil.js"></script>
 
