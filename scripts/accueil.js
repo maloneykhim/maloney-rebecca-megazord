@@ -31,12 +31,11 @@ const sectionMembres = document.querySelector('.sectionMembres');
 const sectionTitreMembres = sectionMembres.querySelector('.sectionTitre');
 const sectionDiapo = document.querySelector('.sectionDiapo');
 const sectionTitreDiapo = sectionDiapo.querySelector('.sectionTitre');
-const main = document.querySelector('main');
 
 gsap.from(".sectionVideo", {
   scrollTrigger: ".sectionVideo",
   scrub: 1,
-  start: '10% bottom', 
+  start: '5% bottom', 
   y: -100,
   ease:'expo', 
   opacity: 0,
@@ -46,7 +45,8 @@ gsap.from(".sectionVideo", {
 
 gsap.from(".sectionMembres", {
   scrollTrigger: ".sectionMembres",
-  start: '10% bottom', 
+  scrub: 1,
+  start: '5% bottom', 
   y: -100,
   ease:'expo', 
   opacity: 0,
@@ -56,7 +56,8 @@ gsap.from(".sectionMembres", {
 
 gsap.from(".sectionDiapo", {
   scrollTrigger: ".sectionDiapo",
-  start: '10% bottom', 
+  scrub: 1,
+  start: '5% bottom', 
   y: -100,
   ease:'expo', 
   opacity: 0,
@@ -68,7 +69,7 @@ gsap.from(".sectionDiapo", {
 gsap.from(".sectionTitreVideo", {
   scrollTrigger: ".sectionVideo",
   scrub: 1,
-  start: '10% bottom', 
+  start: '5% bottom',
   scale:1.2,
   ease:'expo', 
   opacity: 0,
@@ -78,7 +79,7 @@ gsap.from(".sectionTitreVideo", {
   gsap.from(".sectionTitreMembres", {
   scrollTrigger: ".sectionMembres",
   scrub: 1,
-  start: '10% bottom', 
+  start: '5% bottom', 
   scale:1.2,
   ease:'expo', 
   opacity: 0,
@@ -88,7 +89,7 @@ gsap.from(".sectionTitreVideo", {
 gsap.from(".sectionTitreDiapo", {
   scrollTrigger: ".sectionDiapo",
   scrub: 1,
-  start: '10% bottom', 
+  start: '5% bottom', 
   scale:1.2,
   ease:'expo', 
   opacity: 0,
