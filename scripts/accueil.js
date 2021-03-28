@@ -25,73 +25,56 @@ const swiper = new Swiper('.swiper-container', {
 
 gsap.registerPlugin(ScrollTrigger);
 
-const sectionVideo = document.querySelector('.sectionVideo');
-const sectionTitreVideo = sectionVideo.querySelector('.sectionTitre');
-const sectionMembres = document.querySelector('.sectionMembres');
-const sectionTitreMembres = sectionMembres.querySelector('.sectionTitre');
-const sectionDiapo = document.querySelector('.sectionDiapo');
-const sectionTitreDiapo = sectionDiapo.querySelector('.sectionTitre');
+let sectionAnimations1 = document.querySelectorAll('.sectionAnimation1');
 
-gsap.from(".sectionVideo", {
-  scrollTrigger: ".sectionVideo",
-  scrub: 1,
-  start: '5% bottom', 
-  y: -100,
-  ease:'expo', 
-  opacity: 0,
-  duration: 2,
-  toggleActions: 'restart complete reverse reset',
+sectionAnimations1.forEach(sectionAnimation1 => {
+  const titre = sectionAnimation1.querySelector('.titre');
+  const diaporama = sectionAnimation1.querySelector('.diaporama');
+  
+  gsap.timeline({
+    scrollTrigger: {
+      markers: false,
+      start: 'top 70%',
+      trigger: sectionAnimation1,
+      toggleActions: 'play none none reverse',
+    }
+  })
+  .from(titre, {x: -25, opacity: 0})
+  .from(diaporama, {y: 25, opacity: 0}, '-=0.2')
 });
 
-gsap.from(".sectionMembres", {
-  scrollTrigger: ".sectionMembres",
-  scrub: 1,
-  start: '5% bottom', 
-  y: -100,
-  ease:'expo', 
-  opacity: 0,
-  duration: 2,
-  toggleActions: 'restart complete reverse reset',
+let sectionAnimations2 = document.querySelectorAll('.sectionAnimation2');
+
+sectionAnimations2.forEach(sectionAnimation2 => {
+  const titre = sectionAnimation2.querySelector('.titre');
+  const cartes = sectionAnimation2.querySelector('.cartes');
+  
+  gsap.timeline({
+    scrollTrigger: {
+      markers: false,
+      start: 'top 70%',
+      trigger: sectionAnimation2,
+      toggleActions: 'play none none reverse',
+    }
+  })
+  .from(titre, {x: -25, opacity: 0})
+  .from(cartes, {y: 25, opacity: 0}, '-=0.2')
 });
 
-gsap.from(".sectionDiapo", {
-  scrollTrigger: ".sectionDiapo",
-  scrub: 1,
-  start: '5% bottom', 
-  y: -100,
-  ease:'expo', 
-  opacity: 0,
-  duration: 2,
-  delay: 1.5,
-  toggleActions: 'restart complete reverse reset',
-});
+let sectionAnimations3 = document.querySelectorAll('.sectionAnimation3');
 
-gsap.from(".sectionTitreVideo", {
-  scrollTrigger: ".sectionVideo",
-  scrub: 1,
-  start: '5% bottom',
-  scale:1.2,
-  ease:'expo', 
-  opacity: 0,
-  duration: 2,
-});
-
-  gsap.from(".sectionTitreMembres", {
-  scrollTrigger: ".sectionMembres",
-  scrub: 1,
-  start: '5% bottom', 
-  scale:1.2,
-  ease:'expo', 
-  opacity: 0,
-  duration: 2,
-});
-
-gsap.from(".sectionTitreDiapo", {
-  scrollTrigger: ".sectionDiapo",
-  scrub: 1,
-  start: '5% bottom', 
-  scale:1.2,
-  ease:'expo', 
-  opacity: 0,
-  duration: 2,
+sectionAnimations3.forEach(sectionAnimation3 => {
+  const titre = sectionAnimation3.querySelector('.titre');
+  const video = sectionAnimation3.querySelector('.video');
+  
+  gsap.timeline({
+    scrollTrigger: {
+      markers: false,
+      start: 'top 70%',
+      trigger: sectionAnimation3,
+      toggleActions: 'play none none reverse',
+    }
+  })
+  .from(titre, {x: -25, opacity: 0})
+  .from(video, {y: 25, opacity: 0}, '-=0.2')
 });
