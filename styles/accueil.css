@@ -184,7 +184,8 @@ body {
 
 .accueil footer {
   background-color: #99202f;
-  position: relative;
+  position: absolute;
+  top: 3800px;
   width: 100%;
   padding: 20px;
   margin-top: 20px;
@@ -261,7 +262,7 @@ iframe {
   background-color: #cab2b2;
   opacity: 100%;
   position: relative;
-  left: 500px;
+  left: 530px;
   top: -50px;
   margin-right: 10px !important;
 }

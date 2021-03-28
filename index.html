@@ -82,9 +82,7 @@
     </nav>
 
 
-    <main id="main">
-
-      <!-- Cartes Membres -->
+    <main>
 
       <div class="container-fluid membres">
         <div class="row justify-content-center">
@@ -97,28 +95,27 @@
           </div>
           <div class="col-md-9">
       
-            <div class="contenu">
 
-                <!-- Swiper Slides Promo -->
+            <!-- Swiper Slides Promo -->
 
-              <section class="diaporama">
-
-                <h2>images promotionnelles</h2>
-                    
-                <div class="swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/accueilDiapo1S.jpg"></div>
-                    <div class="swiper-slide"><img src="img/accueilDiapo2S.jpg"> </div>
-                    <div class="swiper-slide"><img src="img/accueilDiapo3S.jpg">  </div>
-                    <div class="swiper-slide"><img src="img/accueilDiapo4S.jpg">  </div>
-                  </div></div>
-                  <div class="swiper-pagination"></div>
+              <section class="sectionDiapo">
+                <div class="diaporama">
+                  <h2 class="sectionTitreDiapo">images promotionnelles</h2>
+                      
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="img/accueilDiapo1S.jpg"> </div>
+                      <div class="swiper-slide"><img src="img/accueilDiapo2S.jpg"> </div>
+                      <div class="swiper-slide"><img src="img/accueilDiapo3S.jpg">  </div>
+                      <div class="swiper-slide"><img src="img/accueilDiapo4S.jpg">  </div>
+                    </div></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                
-
               </section> 
-      
-              <h2>membres du groupe</h2>
+
+            <!-- Cartes Membres -->
+              <section class="sectionMembres">
+              <h2 class="sectionTitreMembres">membres du groupe</h2>
               <div class="container"> 
               <div class="row">
               <div class="col-12 col-sm-6">
@@ -189,36 +186,36 @@
               </div> 
                 
               </div>
-
+            </section>
               <!-- Video -->
-              <h2>vidéo</h2>
-
-              <section class="video">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/61-wdN87yAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <section class="sectionVideo">
+                <h2 class="sectionTitreVideo">vidéo</h2>
+                <div class="video">
+                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/61-wdN87yAM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </section> 
         </div>
       </div>
 
-      <!-- Footer -->
-
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-lg-4 text-center text-lg-start">
-            <h6><a data-toggle="modal" href="#popupMaloney">Maloney Khim</a></h6>
-            <h6><a data-toggle="modal" href="#popupRebecca">Rebecca Pilotte</a></h6>
-          </div>
-          <div class="col-xs-12 col-lg-8 text-center text-lg-end">
-            <a href="https://github.com/maloneykhim/maloney-rebecca-megazord" target="_blank">
-            https://github.com/maloneykhim/maloney-rebecca-megazord</a>
-            <h6>©2021</h6>
-          </div>
-        </div>
-      </div>
-    </footer>
-
     </main>
 
+          <!-- Footer -->
+
+          <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-lg-4 text-center text-lg-start">
+                  <h6><a data-toggle="modal" href="#popupMaloney">Maloney Khim</a></h6>
+                  <h6><a data-toggle="modal" href="#popupRebecca">Rebecca Pilotte</a></h6>
+                </div>
+                <div class="col-xs-12 col-lg-8 text-center text-lg-end">
+                  <a href="https://github.com/maloneykhim/maloney-rebecca-megazord" target="_blank">
+                  https://github.com/maloneykhim/maloney-rebecca-megazord</a>
+                  <h6>©2021</h6>
+                </div>
+              </div>
+            </div>
+          </footer>
 
     
 
@@ -257,7 +254,8 @@
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript" src="scripts/accueil.js"></script>
 

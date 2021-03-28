@@ -25,22 +25,72 @@ const swiper = new Swiper('.swiper-container', {
 
 gsap.registerPlugin(ScrollTrigger);
 
-let banners = document.querySelectorAll('.banner');
+const sectionVideo = document.querySelector('.sectionVideo');
+const sectionTitreVideo = sectionVideo.querySelector('.sectionTitre');
+const sectionMembres = document.querySelector('.sectionMembres');
+const sectionTitreMembres = sectionMembres.querySelector('.sectionTitre');
+const sectionDiapo = document.querySelector('.sectionDiapo');
+const sectionTitreDiapo = sectionDiapo.querySelector('.sectionTitre');
+const main = document.querySelector('main');
 
-banners.forEach(banner => {
-  const image = banner.querySelector('.image');
-  const title = banner.querySelector('.title');
-  const contenu = banner.querySelector('.contenu');
-  
-  gsap.timeline({
-    scrollTrigger: {
-      markers: true,
-      start: 'bottom bottom',
-      trigger: banner,
-      toggleActions: 'play none none none',
-    }
-  })
-  .from(image, {scale: 2})
-  .from(title, {y: 100, opacity: 0})
-  .from(contenu, {opacity: 0})
+gsap.from(".sectionVideo", {
+  scrollTrigger: ".sectionVideo",
+  scrub: 1,
+  start: '10% bottom', 
+  y: -100,
+  ease:'expo', 
+  opacity: 0,
+  duration: 2,
+  toggleActions: 'restart complete reverse reset',
+});
+
+gsap.from(".sectionMembres", {
+  scrollTrigger: ".sectionMembres",
+  start: '10% bottom', 
+  y: -100,
+  ease:'expo', 
+  opacity: 0,
+  duration: 2,
+  toggleActions: 'restart complete reverse reset',
+});
+
+gsap.from(".sectionDiapo", {
+  scrollTrigger: ".sectionDiapo",
+  start: '10% bottom', 
+  y: -100,
+  ease:'expo', 
+  opacity: 0,
+  duration: 2,
+  delay: 1.5,
+  toggleActions: 'restart complete reverse reset',
+});
+
+gsap.from(".sectionTitreVideo", {
+  scrollTrigger: ".sectionVideo",
+  scrub: 1,
+  start: '10% bottom', 
+  scale:1.2,
+  ease:'expo', 
+  opacity: 0,
+  duration: 2,
+});
+
+  gsap.from(".sectionTitreMembres", {
+  scrollTrigger: ".sectionMembres",
+  scrub: 1,
+  start: '10% bottom', 
+  scale:1.2,
+  ease:'expo', 
+  opacity: 0,
+  duration: 2,
+});
+
+gsap.from(".sectionTitreDiapo", {
+  scrollTrigger: ".sectionDiapo",
+  scrub: 1,
+  start: '10% bottom', 
+  scale:1.2,
+  ease:'expo', 
+  opacity: 0,
+  duration: 2,
 });
