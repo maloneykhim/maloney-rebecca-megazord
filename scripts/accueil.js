@@ -1,27 +1,26 @@
+// Swiper caroussel
 
 const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
   direction: 'horizontal',
   loop: false,
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
   },
   
   
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
   },
 });
+
+// Animation sections
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -77,4 +76,39 @@ sectionAnimations3.forEach(sectionAnimation3 => {
   })
   .from(titre, {x: -25, opacity: 0})
   .from(video, {y: 25, opacity: 0}, '-=0.2')
+});
+
+// Animation scroll coeur
+
+gsap.registerPlugin(ScrollTrigger);
+
+let timeout;
+let body = document.body;
+const animationLogo = document.querySelector('.animation-coeur')
+
+gsap.to('.animation-coeur', {
+  scrollTrigger: {
+  markers: true,
+  pin: true,
+  scrub: true,
+  start: '100% 50%',
+  end: '500% 0',
+  trigger: '.animation-coeur',
+    onUpdate: (e) => {
+      body.classList.add('is-scrolling');
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        body.classList.remove('is-scrolling');
+      }, 250)
+      
+      if(e.direction == 1) {
+        body.classList.add('scroll-down');
+        body.classList.remove('scroll-up');
+      } 
+      if(e.direction == -1) {
+        body.classList.remove('scroll-down');
+        body.classList.add('scroll-up');
+      }
+    }
+  }
 });

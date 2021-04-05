@@ -11,3 +11,6 @@ const swiper = new Swiper(".swiper-container", {
     slideShadows: false,
   },
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
