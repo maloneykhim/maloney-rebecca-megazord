@@ -336,3 +336,18 @@ iframe {
     background-position: 0 -2400%;
   }
 }
+
+/*/ Modal Maloney/*/
+.maloney_btn {
+  border: none;
+  outline: 0 !important;
+  background-color: transparent;
+  color: white;
+}
+
+.rebecca_btn {
+  border: none;
+  outline: 0 !important;
+  background-color: transparent;
+  color: white;
+}

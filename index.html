@@ -210,9 +210,10 @@
             <div class="container">
               <div class="row">
                 <div class="col-xs-12 col-lg-4 text-center text-lg-start">
-                  <h6><a data-toggle="modal" href="#popupMaloney">Maloney Khim</a></h6>
-                  <h6><a data-toggle="modal" href="#popupRebecca">Rebecca Pilotte</a></h6>
-                </div>
+                  <div class="row">
+                  <button class="maloney_btn" data-bs-toggle="modal" data-bs-target="#maloney"><p class="noms maloney text-center text-lg-start">Maloney Khim</p></button>
+                  <button class="rebecca_btn" data-bs-toggle="modal" data-bs-target="#rebecca"><p class=" noms rebecca text-center text-lg-start">Rebecca Pilotte</p></button>
+                </div></div>
                 <div class="col-xs-12 col-lg-8 text-center text-lg-end">
                   <a href="https://github.com/maloneykhim/maloney-rebecca-megazord" target="_blank">
                   https://github.com/maloneykhim/maloney-rebecca-megazord</a>
@@ -224,55 +225,59 @@
 
     
 
-    <!-- Modal -->
-    <div class="modal" id="popupMaloney" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title" id="exampleModalLongTitle">Maloney Khim</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <img src="img/maloney.gif" alt="">
-          </div>
-        </div>
+    <!--Modal Maloney-->
+		<div class="modal fade maloney" id="maloney" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Maloney Khim</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-    </div>
+      <div class="modal-body">
+        <img src="img/maloney.gif" alt="" class="">
+      </div>
+      </div>
+      </div>
+      </div>
 
-    
-    <div class="modal" id="popupRebecca" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title" id="exampleModalLongTitle">Rebecca Pilotte</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <img src="img/rebecca.png" alt="">
-          </div>
-        </div>
+      <!--Modal Rebecca-->
+		<div class="modal fade rebecca" id="rebecca" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Rebecca Pilotte</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-    </div>
+      <div class="modal-body">
+        <img src="img/rebecca.png" alt="" class="">
+      </div>
+      </div>
+      </div>
+      </div>
 
-    <div class="modal" id="popupQuiz" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title" id="exampleModalLongTitle">Quiz sur Marianas Trench</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <img src="img/rebecca.png" alt="">
-          </div>
-        </div>
+    <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popupQuiz">
+  Launch demo modal
+</button>  -->
+
+<!-- Modal Quiz-->
+<div class="modal fade" id="popupQuiz" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Quiz Marianas Trench</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Quiz
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
+  </div>
+</div>
+
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
