@@ -12,7 +12,7 @@
   --regular: "Hind Madurai";
 }
 
-/*/ Modal Maloney & Rebecca/*/
+/*/ Modals/*/
 .maloney_btn {
   border: none;
   outline: 0 !important;
@@ -25,4 +25,34 @@
   outline: 0 !important;
   background-color: transparent;
   color: white;
+}
+
+.quiz_btn {
+  border: none;
+  outline: 0 !important;
+  background-color: transparent;
+  color: white;
+}
+
+.link {
+  color: white !important;
+}
+
+.modal-header {
+  border: none;
+  outline: 0 !important;
+  background: #c63f50;
+}
+
+.modal-header h3 {
+  color: white;
+}
+
+.question {
+  margin-bottom: 30px;
+  display: none;
+}
+
+.is-visible {
+  display: block;
 }

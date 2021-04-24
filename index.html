@@ -77,7 +77,7 @@
               <a href="discographie.html" class="nav-link">Discographie</a>
             </li>
             <li class="nav-item">
-              <a href="#popupQuiz" data-toggle = "modal" data-target= "#popupQuiz" class="nav-link">Quiz</a>
+              <button class="quiz_btn" data-bs-toggle="modal" data-bs-target="#modalQuiz"><p class="nav-link">Quiz</p></button>
             </li>
           </ul>
         </div>
@@ -211,11 +211,11 @@
               <div class="row">
                 <div class="col-xs-12 col-lg-4 text-center text-lg-start">
                   <div class="row">
-                  <button class="maloney_btn" data-bs-toggle="modal" data-bs-target="#maloney"><p class="noms maloney text-center text-lg-start">Maloney Khim</p></button>
-                  <button class="rebecca_btn" data-bs-toggle="modal" data-bs-target="#rebecca"><p class=" noms rebecca text-center text-lg-start">Rebecca Pilotte</p></button>
+                  <button class="maloney_btn" data-bs-toggle="modal" data-bs-target="#maloney"><p class="maloney text-center text-lg-start">Maloney Khim</p></button>
+                  <button class="rebecca_btn" data-bs-toggle="modal" data-bs-target="#rebecca"><p class="rebecca text-center text-lg-start">Rebecca Pilotte</p></button>
                 </div></div>
                 <div class="col-xs-12 col-lg-8 text-center text-lg-end">
-                  <a href="https://github.com/maloneykhim/maloney-rebecca-megazord" target="_blank">
+                  <a href="https://github.com/maloneykhim/maloney-rebecca-megazord" class="link" target="_blank">
                   https://github.com/maloneykhim/maloney-rebecca-megazord</a>
                   <h6>©2021</h6>
                 </div>
@@ -255,24 +255,16 @@
       </div>
       </div>
 
-    <!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popupQuiz">
-  Launch demo modal
-</button>  -->
-
 <!-- Modal Quiz-->
-<div class="modal fade" id="popupQuiz" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalQuiz" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Quiz Marianas Trench</h5>
+        <h3 class="modal-title">Quiz Marianas Trench</h3>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         Quiz
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
