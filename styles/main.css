@@ -11,3 +11,18 @@
   --title: "Cinzel";
   --regular: "Hind Madurai";
 }
+
+/*/ Modal Maloney & Rebecca/*/
+.maloney_btn {
+  border: none;
+  outline: 0 !important;
+  background-color: transparent;
+  color: white;
+}
+
+.rebecca_btn {
+  border: none;
+  outline: 0 !important;
+  background-color: transparent;
+  color: white;
+}
