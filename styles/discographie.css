@@ -151,7 +151,7 @@ a:hover {
 
 /*/ Modal/*/
 
-.discographie .modal-body img {
+.discographie .modal-body .avatar {
   width: 300px;
   display: block;
   margin-left: auto;

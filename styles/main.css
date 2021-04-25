@@ -56,3 +56,43 @@
 .is-visible {
   display: block;
 }
+
+.mauvaise-reponse {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.mauvaise-reponse .cercle {
+  position: absolute;
+}
+
+.mauvaise-reponse .pouce {
+  position: absolute;
+}
+
+.mauvaise-reponse .face {
+  position: absolute;
+}
+
+.bonne-reponse {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.bonne-reponse .cercle {
+  position: absolute;
+}
+
+.bonne-reponse .pouce {
+  position: absolute;
+}
+
+.bonne-reponse .face {
+  position: absolute;
+}
