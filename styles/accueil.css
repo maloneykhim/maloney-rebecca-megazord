@@ -1,1 +1,343 @@
-accueil
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.accueil picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: hidden;
+  z-index: -100;
+}
+
+.accueil h1 {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  color: #99202f;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.accueil .container-fluid.texte {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.accueil .contraste {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  opacity: 50%;
+}
+
+.accueil header {
+  position: relative;
+}
+
+.accueil header p {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: center;
+  color: black;
+}
+
+.accueil img.image {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.accueil a.btn {
+  border-radius: 4px;
+  text-align: center;
+  background-color: #99202f;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 500;
+}
+
+.accueil a.btn:hover {
+  background-color: #c63f50;
+  color: #fff;
+}
+
+@media (orientation: landscape) {
+  .accueil header {
+    height: 56.25vw;
+  }
+}
+
+@media (orientation: portrait) {
+  .accueil img.image {
+    object-fit: cover;
+    object-position: 0% 50%;
+  }
+  .accueil picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  .accueil h1 {
+    font-size: 2.7rem;
+  }
+  .accueil p {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .accueil .contenu {
+    position: relative;
+  }
+}
+
+.navbar {
+  background-color: black;
+}
+
+/*/ Cards/*/
+
+.accueil h2 {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  color: #3e3b3b;
+  font-size: 2.8rem;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.accueil h3 {
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  color: #99202f;
+  text-align: center;
+}
+
+.accueil h4 {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.accueil h5 {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 1rem;
+}
+
+.accueil .block {
+  height: 800px;
+}
+
+.accueil .animation {
+  background-color: transparent;
+  width: 100%;
+}
+
+.accueil .card {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.accueil .btnMembres {
+  border-radius: 4px;
+  text-align: center;
+  background-color: #99202f;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 500;
+}
+
+.accueil .btnMembres:hover {
+  background-color: #c63f50;
+  color: #fff;
+}
+
+.accueil h3 {
+  color: rgb(67, 64, 64);
+  font-family: "Cinzel", serif, bold;
+}
+
+/*/ Footer/*/
+
+.accueil footer {
+  background-color: #99202f;
+  position: absolute;
+  top: 3900px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.accueil h6 {
+  color: #fff;
+}
+
+.h6:link {
+  color: #fff;
+}
+
+.accueil footer a:hover {
+  color: #3e3b3b;
+}
+
+/*/ Modal/*/
+
+.modal-body .avatar {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*/ Vidéo/*/
+
+.accueil .video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*/ Diaporama/*/
+
+.accueil .diaporama {
+  position: relative;
+  left: 50%;
+  height: 550px;
+  transform: translateX(-50%);
+}
+
+.accueil .diaporama h2 {
+  text-align: center;
+}
+
+.accueil .swiper-container {
+  padding-top: 0;
+  width: 100%;
+}
+
+.accueil .swiper-slides {
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.accueil .diaporama img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.accueil .swiper-pagination-bullet {
+  background-color: #cab2b2;
+  opacity: 100%;
+  position: relative;
+  left: 530px;
+  top: -50px;
+  margin-right: 10px !important;
+}
+
+.accueil .swiper-pagination-bullet-active {
+  background-color: #c63f50;
+  opacity: 100%;
+}
+
+/*/ Animation scroll/*/
+
+.animation-coeur {
+  width: 100%;
+  height: 0px;
+  padding-bottom: 100%;
+  background-size: 100% auto;
+  background-image: url(https://i.imgur.com/k5EPYtA.png);
+  animation-name: statique;
+  position: sticky;
+  top: 0;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(24);
+}
+
+@keyframes statique {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -2400%;
+  }
+}
+
+.is-scrolling.scroll-up .animation-coeur {
+  width: 100%;
+  height: 0px;
+  padding-bottom: 100%;
+  background-size: 100% auto;
+  background-image: url(https://i.imgur.com/qwhB2XY.png);
+  animation-name: scroll-up;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(24);
+}
+
+@keyframes scroll-up {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -2400%;
+  }
+}
+
+.is-scrolling.scroll-down .animation-coeur {
+  width: 100%;
+  height: 0px;
+  padding-bottom: 100%;
+  background-size: 100% auto;
+  background-image: url(https://i.imgur.com/b5xkJqB.png);
+  animation-name: scroll-down;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(24);
+}
+
+@keyframes scroll-down {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -2400%;
+  }
+}

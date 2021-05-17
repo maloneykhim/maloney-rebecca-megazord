@@ -1,7 +1,205 @@
-body {
-  background-color: #000;
+.discographie .heros {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
 }
 
-.heros {
-  width: 300px;
+@media screen and (orientation: landscape) {
+  .discographie .heros {
+    height: 56.25vw;
+  }
+}
+
+/* .discographie .heros picture {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.discographie .heros picture .image {
+  object-fit: contain;
+} */
+/* 
+.discographie .image {
+  width: 100%;
+  height: 100%;
+} */
+
+.discographie main {
+  padding-top: 150px;
+}
+
+.discographie .degrade {
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  background-image: linear-gradient(
+    rgba(31, 7, 10, 0.75),
+    rgba(153, 32, 47, 0.75)
+  );
+}
+
+.discographie .container-fluid,
+.discographie .row {
+  position: relative;
+}
+
+.discographie .heros .container-fluid {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  z-index: 3;
+}
+
+.discographie h1 {
+  color: white;
+  font-family: "Cinzel", serif;
+  z-index: 5;
+}
+
+.discographie h2 {
+  color: #99202f;
+  font-family: "Cinzel", serif, bold;
+}
+
+.discographie h3 {
+  color: rgb(67, 64, 64);
+  font-family: "Cinzel", serif, bold;
+}
+
+.discographie .li {
+  color: rgb(67, 64, 64);
+  font-family: "Cinzel", serif;
+}
+
+.discographie p {
+  color: rgb(181, 181, 181);
+  font-family: "Hind Madurai", sans-serif;
+}
+
+.discographie .album {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.discographie .image.split {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+  .discographie .album {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .discographie .image.split {
+    margin-top: 0px;
+  }
+}
+
+.discographie footer {
+  background-color: #99202f;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.discographie h6 {
+  color: #fff;
+}
+
+.discographie a:link {
+  text-decoration: none;
+}
+
+.discographie a:hover {
+  color: #3e3b3b;
+}
+
+.discographie .video {
+  position: relative;
+}
+
+.discographie h3 {
+  color: rgb(67, 64, 64);
+  font-family: "Cinzel", serif, bold;
+  padding-top: 25px;
+}
+
+.discographie .video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.swiper-container {
+  padding-top: 10%;
+  position: relative;
+  height: 80%;
+}
+
+.discographie .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/*/ Modal/*/
+
+.animation-mic {
+  width: 100%;
+  height: 0px;
+  position: sticky;
+  top: 0;
+  padding-bottom: 100%;
+  background-size: 100% auto;
+  background-image: url(https://imgur.com/20oEZFt.png);
+  animation-name: mic-statique;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(24);
+}
+
+@keyframes mic-statique {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -2400%;
+  }
+}
+
+.is-scrolling.scroll-up .animation-mic {
+  background-image: url(https://imgur.com/d3XHauC.png);
+  animation-name: mic-haut;
+}
+
+@keyframes mic-haut {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -2400%;
+  }
+}
+
+.is-scrolling.scroll-down .animation-mic {
+  background-image: url(https://imgur.com/5dvwdTd.png);
+  animation-name: mic-bas;
+}
+
+@keyframes mic-bas {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -2400%;
+  }
 }

@@ -15,10 +15,356 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Hind+Madurai:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles\main.css" />
   </head>
-  <body>
-    <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="accueil.js"></script>
+  <body class="accueil">
+    <header>
+      <picture>
+        <source srcset="img/paysagev1.jpg" media="(orientation: landscape)" />
+        <img class="image" src="img/portrait.jpg" />
+      </picture>
+      <div class="contraste"></div>
+      <div class="container-fluid texte">
+        <div class="row justify-content-center">
+          <div class="text-center col-12 col-md-6 col-xxl-4">
+            <h1>Mariana's Trench</h1>
+            <p>
+              Mariana's Trench est un groupe de pop rock canadien originaire de
+              Vancouver, en Colombie-Britannique. Le groupe est composé de
+              quatre membres : Josh Ramsay, Matt Webb, Mike Ayley et Ian
+              Casselman.
+            </p>
+            <a href="#main" class="btn">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"
+          ><img src="img/logo-xs.png" alt="logo"
+        /></a>
+        <!-- Hamburger button -->
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Affichage/masquage de la navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation -->
+        <div id="mainNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="discographie.html" class="nav-link">Discographie</a>
+            </li>
+            <li class="nav-item">
+              <button
+                class="quiz_btn"
+                data-bs-toggle="modal"
+                data-bs-target="#modalQuiz"
+              >
+                <p class="nav-link">Quiz</p>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container-fluid membres">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-3 d-none d-md-block">
+            <div class="animation-coeur"></div>
+          </div>
+          <div class="col-md-9">
+            <!-- Swiper Slides Promo -->
+
+            <section class="sectionAnimation1">
+              <div class="diaporama">
+                <h2 class="titre">images promotionnelles</h2>
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/accueilDiapo1S.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/accueilDiapo2S.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/accueilDiapo3S.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/accueilDiapo4S.jpg" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </section>
+
+            <!-- Cartes Membres -->
+            <section class="sectionAnimation2">
+              <h2 class="titre">membres du groupe</h2>
+              <div class="cartes">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-sm-6">
+                      <div class="card">
+                        <img
+                          src="img/josh-ramsey-vf.jpg"
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                          <h3>Josh Ramsey</h3>
+                          <h4>CHANT ✦ GUITARE ✦ PIANO ✦ BATTERIE</h4>
+                          <p class="text-center">
+                            Josh Ramsay a fondé Marianas Trench en 2001. Il est
+                            notamment reconnu pour être le chanteur principal du
+                            groupe canadien.
+                          </p>
+                          <div class="row justify-content-center">
+                            <div class="card-footer text-muted"></div>
+                            <a
+                              href="https://www.famousbirthdays.com/people/josh-ramsay.html"
+                              class="btnMembres col-12"
+                              >En savoir plus</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                      <div class="card">
+                        <img src="img/matt-webb-vf.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <h3>Matt Webb</h3>
+                          <h4>GUITARE ✦ CHANT ✦ PIANO</h4>
+                          <p class="text-center">
+                            Bien avant d'avoir joint le groupe Marinas Trench,
+                            Matt Webb écrivait et créait déjà de la musique et
+                            continue de le faire.
+                          </p>
+                          <div class="row justify-content-center">
+                            <div class="card-footer text-muted"></div>
+                            <a
+                              href="https://www.famousbirthdays.com/people/matt-webb.html"
+                              class="btnMembres col-12"
+                              >En savoir plus</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                      <div class="card">
+                        <img src="img/mike-ayley-vf.jpg" class="card-img-top" />
+                        <div class="card-body">
+                          <h3>Mike Ayley</h3>
+                          <h4>BASSE ✦ CHANT</h4>
+                          <p class="text-center">
+                            Depuis 2004, Mike est le bassiste du quatuor
+                            pop-rock de Vancouver. Il fut recruté dans le groupe
+                            par Ian, qui était son colocataire.
+                          </p>
+                          <div class="row justify-content-center">
+                            <div class="card-footer text-muted"></div>
+                            <a
+                              href="https://www.famousbirthdays.com/people/mike-ayley.html"
+                              class="btnMembres col-12"
+                              >En savoir plus</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6">
+                      <div class="card">
+                        <img
+                          src="img/ian-casselman-vf.jpg"
+                          class="card-img-top"
+                        />
+                        <div class="card-body">
+                          <h3>Ian Casselman</h3>
+                          <h4>BATTERIE ✦ CHANT</h4>
+                          <p class="text-center">
+                            Ian Casselman est un batteur progressiste qui a
+                            commencé à jouer avec le groupe canadien Marianas
+                            Trench en 2001.
+                          </p>
+                          <div class="row justify-content-center">
+                            <div class="card-footer text-muted"></div>
+                            <a
+                              href="https://www.famousbirthdays.com/people/ian-casselman.html"
+                              class="btnMembres col-12"
+                              >En savoir plus</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Video -->
+            <section class="sectionAnimation3">
+              <h2 class="titre">vidéo</h2>
+              <div class="video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube-nocookie.com/embed/61-wdN87yAM"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-lg-4 text-center text-lg-start">
+            <div class="row">
+              <button
+                class="maloney_btn"
+                data-bs-toggle="modal"
+                data-bs-target="#maloney"
+              >
+                <p class="maloney text-center text-lg-start">Maloney Khim</p>
+              </button>
+              <button
+                class="rebecca_btn"
+                data-bs-toggle="modal"
+                data-bs-target="#rebecca"
+              >
+                <p class="rebecca text-center text-lg-start">Rebecca Pilotte</p>
+              </button>
+            </div>
+          </div>
+          <div class="col-xs-12 col-lg-8 text-center text-lg-end">
+            <a
+              href="https://github.com/maloneykhim/maloney-rebecca-megazord"
+              class="link"
+              target="_blank"
+            >
+              https://github.com/maloneykhim/maloney-rebecca-megazord</a
+            >
+            <h6>©2021</h6>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Modal Maloney-->
+    <div class="modal fade maloney" id="maloney" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Maloney Khim</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/maloney.gif" alt="" class="avatar" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal Rebecca-->
+    <div class="modal fade rebecca" id="rebecca" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Rebecca Pilotte</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/rebecca.png" alt="" class="avatar" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Quiz-->
+    <div
+      class="modal fade"
+      id="modalQuiz"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Quiz Marianas Trench</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body quiz">
+            <div class="mauvaise-reponse">
+              <img src="https://i.imgur.com/5xOYNAo.png" class="cercle" />
+              <img src="https://i.imgur.com/IxRLw12.png" class="pouce" />
+              <img src="https://i.imgur.com/RMuNdxj.png" class="face" />
+            </div>
+            <div class="bonne-reponse">
+              <img src="https://i.imgur.com/rLiHMfa.png" class="cercle" />
+              <img src="https://i.imgur.com/uRjSaFL.png" class="pouce" />
+              <img src="https://i.imgur.com/sStkxeL.png" class="face" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/accueil.js"></script>
   </body>
 </html>

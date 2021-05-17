@@ -1,3 +1,105 @@
 @import url("accueil.css");
 @import url("discographie.css");
 
+:root {
+  --bg: #fff;
+  --text: black;
+  --primary: #99202f;
+  --primary-alt: #c63f50;
+  --secondary: #3e3b3b;
+  --secondary-alt: #d6d6d6;
+  --title: "Cinzel";
+  --regular: "Hind Madurai";
+}
+
+/*/ Modals/*/
+.maloney_btn {
+  border: none;
+  outline: 0 !important;
+  background-color: transparent;
+  color: white;
+}
+
+.rebecca_btn {
+  border: none;
+  outline: 0 !important;
+  background-color: transparent;
+  color: white;
+}
+
+.quiz_btn {
+  border: none;
+  outline: 0 !important;
+  background-color: transparent;
+  color: white;
+}
+
+.link {
+  color: white !important;
+}
+
+.modal-header {
+  border: none;
+  outline: 0 !important;
+  background: #c63f50;
+}
+
+.modal-header h3 {
+  color: white;
+}
+
+.question {
+  margin-bottom: 30px;
+  display: none;
+}
+
+.is-visible {
+  display: block;
+}
+
+.mauvaise-reponse {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.modal-body .avatar {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mauvaise-reponse .cercle {
+  position: absolute;
+}
+
+.mauvaise-reponse .pouce {
+  position: absolute;
+}
+
+.mauvaise-reponse .face {
+  position: absolute;
+}
+
+.bonne-reponse {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.bonne-reponse .cercle {
+  position: absolute;
+}
+
+.bonne-reponse .pouce {
+  position: absolute;
+}
+
+.bonne-reponse .face {
+  position: absolute;
+}
