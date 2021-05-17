@@ -21,8 +21,6 @@ let body = document.body;
 
 gsap.to(".animation-mic", {
   scrollTrigger: {
-    pin: true,
-    pinSpacing: false,
     scrub: true,
     start: "50% 50%",
     end: "100% 0%",

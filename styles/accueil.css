@@ -28,19 +28,26 @@ body {
   text-align: center;
 }
 
-.accueil .container-fluid {
+.accueil .container-fluid.texte {
   z-index: 100;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -50%);
 }
 
 .accueil .contraste {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100vh;
   width: 100vw;
   background-color: #fff;
   opacity: 50%;
+}
+
+.accueil header {
+  position: relative;
 }
 
 .accueil header p {
@@ -74,7 +81,7 @@ body {
 
 @media (orientation: landscape) {
   .accueil header {
-    height: 56.25%;
+    height: 56.25vw;
   }
 }
 
@@ -148,11 +155,6 @@ body {
   width: 100%;
 }
 
-.accueil main .container-fluid {
-  position: absolute;
-  top: 2000px;
-}
-
 .accueil .card {
   margin-bottom: 10px;
   margin-top: 10px;
@@ -204,6 +206,13 @@ body {
 }
 
 /*/ Modal/*/
+
+.modal-body .avatar {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*/ Vidéo/*/
 

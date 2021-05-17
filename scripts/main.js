@@ -125,7 +125,7 @@ class Quiz {
       this.div.appendChild(this.br);
     }
 
-    if ("o3" in Q.acf) {
+    if (Q.acf.o3 !== "") {
       let radio = document.createElement("input");
       radio.setAttribute("type", "radio");
       radio.setAttribute("name", "question" + value);
@@ -140,7 +140,7 @@ class Quiz {
       this.div.appendChild(this.br);
     }
 
-    if ("o4" in Q.acf) {
+    if (Q.acf.o4 !== "") {
       let radio = document.createElement("input");
       radio.setAttribute("type", "radio");
       radio.setAttribute("name", "question" + value);
@@ -156,10 +156,10 @@ class Quiz {
     }
   }
   setVisible(number) {
-    let divQ = document.querySelectorAll(".question");
-    divQ.forEach((q) => {
+    let divQAcf = document.querySelectorAll(".question");
+    divQAcf.forEach((q) => {
       q.classList.remove("is-visible");
-      divQ[number].classList.add("is-visible");
+      divQAcf[number].classList.add("is-visible");
     });
   }
   answers() {
@@ -167,7 +167,8 @@ class Quiz {
     R.forEach((radio) => {
       radio.addEventListener("change", () => {
         if (radio.checked) {
-          if (radio.value == this.questions[this.index].r) {
+          console.log(this.questions[this.index])
+          if (radio.value == this.questions[this.index].acf.r) {
             this.score++;
             console.log("Bonne réponse: pointage " + this.score);
 

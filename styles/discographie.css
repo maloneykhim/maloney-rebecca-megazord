@@ -26,6 +26,10 @@
   height: 100%;
 } */
 
+.discographie main {
+  padding-top: 150px;
+}
+
 .discographie .degrade {
   position: absolute;
   top: 0%;
@@ -152,6 +156,8 @@
 .animation-mic {
   width: 100%;
   height: 0px;
+  position: sticky;
+  top: 0;
   padding-bottom: 100%;
   background-size: 100% auto;
   background-image: url(https://imgur.com/20oEZFt.png);
