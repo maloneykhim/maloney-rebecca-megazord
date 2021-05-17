@@ -41,13 +41,12 @@
 .discographie .container-fluid,
 .discographie .row {
   position: relative;
-  height: 100%;
 }
 
 .discographie .heros .container-fluid {
   position: absolute;
-  top: 250px;
-  left: 100px;
+  bottom: 50px;
+  left: 20px;
   z-index: 3;
 }
 
@@ -139,8 +138,7 @@
 .swiper-container {
   padding-top: 10%;
   position: relative;
-  height: 80vh;
-  width: 80vw;
+  height: 80%;
 }
 
 .discographie .swiper-slide img {
@@ -150,13 +148,6 @@
 }
 
 /*/ Modal/*/
-
-.discographie .modal-body .avatar {
-  width: 300px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .animation-mic {
   width: 100%;

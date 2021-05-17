@@ -88,8 +88,6 @@ const animationLogo = document.querySelector('.animation-coeur')
 
 gsap.to('.animation-coeur', {
   scrollTrigger: {
-  pin: true,
-  pinSpacing: false,
   scrub: true,
   start: '50% 50%',
   end: '100% 0%',

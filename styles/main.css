@@ -65,6 +65,13 @@
   transform: scale(0);
 }
 
+.modal-body .avatar {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mauvaise-reponse .cercle {
   position: absolute;
 }

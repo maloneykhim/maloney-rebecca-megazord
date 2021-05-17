@@ -140,7 +140,7 @@ class Quiz {
       this.div.appendChild(this.br);
     }
 
-    if ("o4" in Q) {
+    if ("o4" in Q.acf) {
       let radio = document.createElement("input");
       radio.setAttribute("type", "radio");
       radio.setAttribute("name", "question" + value);
@@ -148,7 +148,7 @@ class Quiz {
       this.div.appendChild(radio);
 
       let label = document.createElement("label");
-      label.innerText = Q.o4;
+      label.innerText = Q.acf.o4;
       this.div.appendChild(label);
 
       this.br = document.createElement("br");
